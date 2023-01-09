@@ -24,6 +24,11 @@ function addImagesMarkup(galleryItems) {
         return
       }
     }
-    new SimpleLightbox('.gallery a');
+    
+    const gallery = new SimpleLightbox('.gallery a', {
+      captions: true,
+      captionsData: "alt",
+      captionDelay: 250,
+  });
     
 console.log(galleryItems);
